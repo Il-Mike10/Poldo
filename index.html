@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poldo l'occhialuto - Il misterioso figuro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <header class="glass-header">
+        <nav>
+            <div class="logo">Poldo.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi è Poldo?</a></li>
+                <li><a href="#gallery">Mistero</a></li>
+                <li><button id="music-toggle" class="btn btn-secondary music-btn">🎵 Play Music</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Incontra Poldo <br><span class="highlight">l'Occhialuto</span></h1>
+                <p class="hero-subtitle">Misterioso. Rotondo. Dotato di sfere visive sproporzionate.</p>
+                <div class="cta-group">
+                    <a href="#about" class="btn btn-primary">Scopri il segreto</a>
+                    <a href="#gallery" class="btn btn-secondary">Ammira</a>
+                </div>
+            </div>
+            <div class="hero-image-container glass-card">
+                <!-- Using the original image provided by the user -->
+                <img src="poldo.jpg" alt="Poldo l'occhialuto" class="hero-img" id="poldo-img">
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">Chi si cela dietro quelle sfere?</h2>
+            <div class="about-grid">
+                <div class="glass-card info-card card-1">
+                    <div class="card-icon">👁️</div>
+                    <h3>Visione Panoramica</h3>
+                    <p>I tre enormi globi non sono occhiali, sono sensori per captare ogni forma di affetto nel raggio di 10km.</p>
+                </div>
+                <div class="glass-card info-card card-2">
+                    <div class="card-icon">🏺</div>
+                    <h3>Struttura Argillosa</h3>
+                    <p>Nasce dall'antica arte della manipolazione molecolare. La sua densità rivela una saggezza profonda.</p>
+                </div>
+                <div class="glass-card info-card card-3">
+                    <div class="card-icon">⚡</div>
+                    <h3>Energia Quantica</h3>
+                    <p>Non ha bisogno di mangiare o bere, assorbe direttamente i raggi cosmici attraverso il naso prominente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="glass-card highlight-box">
+                <h2>Il fascino dell'imperfezione</h2>
+                <p>Nato da mani abili ma imprevedibili, Poldo rappresenta l'essenza stessa della creatività spontanea. Non farti ingannare dalla sua forma buffa: la sua saggezza millenaria è racchiusa in quella plastilina grigia.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p>&copy; 2026 Poldo. Tutti i diritti riservati agli esseri rotondi.</p>
+    </footer>
+
+    <!-- Audio Element -->
+    <audio id="bg-music" loop autoplay preload="auto">
+        <source src="poldo.mp3" type="audio/mpeg">
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
